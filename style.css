@@ -1,0 +1,137 @@
+/*General*/
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+   color:white; 
+}
+
+body {
+    background-color: brown;
+}
+
+/*Choose Pokemon Screen*/
+#mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.Pokemons{
+    display: flex;
+    align-items: baseline;
+}
+
+#pikachu{
+    display: flex;
+    flex-direction: column;
+}
+
+#blaziken{
+    display: flex;
+    flex-direction: column;
+}
+
+#golem{
+    display: flex;
+    flex-direction: column;
+}
+
+/*In battle*/
+
+#gameMain{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 160px;
+}
+
+#gameMenu{
+    align-items: center;
+
+}
+
+#gameScreen{
+    background-color: cornflowerblue;
+    background-image: url("./images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 800px;
+    border: solid;
+    border-width: 5px;
+}
+
+/*Pokemon Pos*/
+
+#pokemonAlly {
+    position:relative; left:30px; top:240px;
+}
+
+#pokemonEnemy {
+    position:relative; left:262px; top:20px;
+}
+
+/*In battle buttons*/
+
+.buttonPokemon{
+    margin-top: 8px;
+    color: black;
+    height: 50px;
+    width: 266px;
+    font-size: 30px;
+    border-style: none;
+    border-radius: 20px;
+}
+
+#buttonAttack{  
+    background-color: rgb(68, 204, 14);
+}
+
+#buttonItems{  
+    background-color: rgb(250, 199, 30);
+}
+
+#buttonRun{  
+    background-color: rgb(30, 188, 250);
+}
+
+.buttonPokemon:hover{
+    cursor: pointer;
+}
+
+.move{
+}
+
+#move1{
+    
+}
+
+#move2{
+
+}
+
+#move3{
+
+}
+
+#move4{
+
+}
+
+#return{
+    width: 800px;
+    align-self: center;
+    background-color: rgb(104, 105, 207);
+    color:white;
+}
+
+#returnDiv{
+    display:flex;
+    justify-content: center;
+}
