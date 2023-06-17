@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batalha</title>
     <link rel="stylesheet" href="style.css">
-    <script src="scriptBattle.js"></script>
+    <link rel="stylesheet" href="background.css">
 </head>
+
 <body>
     <div id="gameMain">
+        <h1 id="console">‣</h1>
         <div id="gameScreen">
-            <img id="pokemonAlly" src="./images/blaziken.gif" width="250px">
+            <img id="pokemonAlly" src="" width="250px">
             <img id="pokemonEnemy" src="./images/mewtwo.gif" width="280px">
         </div>
         <div id="gameMenu">
             <button class="buttonPokemon" id="buttonAttack" onclick="ataques()">Atacar</button>
-            <button class="buttonPokemon" id="buttonItems">Itens</button>
-            <button class="buttonPokemon" id="buttonRun">Desistir</button>
-            <button hidden class="buttonPokemon move" id="move1">Movimento 1</button>
-            <button hidden class="buttonPokemon move" id="move2">Movimento 2</button>
+            <button class="buttonPokemon" id="buttonRun" onclick="desistir()">Desistir</button>
+            <div id="acoes">
+                <button hidden class="buttonPokemon move" id="move1" onclick="atacar('movimento1')">Movimento 1</button>
+                <button hidden class="buttonPokemon move" id="move2" onclick="atacar('movimento2')">Movimento 2</button>
+            </div>
             <div id="returnDiv">
                 <button hidden class="buttonPokemon" id="return" onclick="voltar()">Voltar</button>
             </div>
 
         </div>
     </div>
+    <script src="scriptBattle.js"></script>
 </body>
+
 </html>
