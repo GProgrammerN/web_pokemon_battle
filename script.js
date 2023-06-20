@@ -1,9 +1,9 @@
 function selecionar(pokemonID) {
     var getPokemonID = pokemonID
+    var getURL = window.location.href
+    getURL = getURL.replace("/index.html", "");
     localStorage.setItem("pokemonID", getPokemonID)
-    if (window.location.hostname == 'github.com') {
-        window.location.pathname += '/batalha.html'
-    }else {
-        window.location.pathname = '/batalha.html'
-    }
+    localStorage.setItem("URL", getURL)
+    window.location = `${getURL}/batalha.html`
+
 }

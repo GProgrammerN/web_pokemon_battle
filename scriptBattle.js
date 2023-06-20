@@ -78,6 +78,7 @@ const Mewtwo = {
 
 var moves = ["Ataque 1", "Ataque 2"]
 var pokemonName = localStorage.getItem("pokemonID")
+var URLinicio = localStorage.getItem("URL")
 iniciarBatalha(pokemonName)
 var vidaAliado = 200, vidaInimigo = 200
 
@@ -157,14 +158,14 @@ function atacar(move) {
     console.innerHTML += " Retornando em 5 segundos."
 
     setTimeout(() => {
-        window.location.href = "http://localhost:5500/index.html"
+        window.location.href = URLinicio
     }, 5000);
 
 }
 
 
 function desistir() {
-    window.location.href = "http://localhost:5500/index.html";
+    window.location.href = `${URLinicio}`
 }
 function sumir() {
     document.getElementById("buttonAttack").style.display = 'none'
